@@ -1,0 +1,62 @@
+.todoItem, .todoItemGrey {
+   display: flex;
+   justify-content: space-between;
+   background-color: white;
+   margin-top: 10px;
+   padding: 10px;
+   cursor: pointer;
+   border-radius: 5px;
+   border: 2px solid #555;
+   height: 40px;
+}
+
+.todoItemGrey {
+   background-color: rgba(255, 255, 255, 0);
+}
+
+.todoIcon, .todoIconGrey, .todoIconDel {
+   font-size: 1.8rem;
+   margin-right: 10px;
+   color: teal;
+   align-items: center;
+}
+
+.todoIconGrey {
+   color: gray;
+}
+
+.todoIconDel, .todoIconComp {
+   width: 30px;
+   font-size: 1.4rem;
+   color: gray;
+}
+
+.todoIconDel:hover {
+   color: red;
+   font-size: 1.6rem;
+}
+
+.todoIconComp:hover {
+   color: green;
+   font-size: 1.6rem;
+}
+
+.text, .textGrey {
+   color: black;
+   margin-left: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.textGrey {
+   color: gray;
+}
+
+.todoBtnPanel {
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   margin: 5px;
+
+}

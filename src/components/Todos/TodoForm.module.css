@@ -1,0 +1,13 @@
+.formConteiner {
+   width: 70%;
+}
+
+.formConteiner input {
+   width: 45%;
+   height: 50px;
+   margin-top: 40px;
+   font-size: 1.3rem;
+   padding-left: 10px;
+   border-radius: 5px;
+   border: 2px solid #555;
+}
