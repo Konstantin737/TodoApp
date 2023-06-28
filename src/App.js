@@ -3,8 +3,10 @@ import './App.css';
 import TodoForm from './components/Todos/TodoForm';
 import TodoList from './components/Todos/TodoList';
 import ButtonPanel from './components/ButtonPanel/ButtonPanel';
+import { v4 as uuidv4 } from 'uuid'
 //https://react-icons.github.io/react-icons/icons?name=ri - иконки
 //https://www.npmjs.com/package/uuid - генератор уникальных id
+//id:(Math.random()*100000)
 
 function App() {
 
@@ -18,7 +20,7 @@ function App() {
  todos.forEach((item)=>{if(item.isComleted===true) {checkComplitedTasks++}})
 
  function addTodoHandler (newTodo) {
-  setTodos([...todos, {text:newTodo, isComleted: false, id:(Math.random()*100000)}])
+  setTodos([...todos, {text:newTodo, isComleted: false, id:uuidv4()}])
  }
 
  function deleteTodoHandler (id) {
